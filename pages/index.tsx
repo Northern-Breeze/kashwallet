@@ -1,62 +1,27 @@
+import * as React from 'react';
+
 export default function Home() {
   return (
 <div>
-    <div class="columns is-multiline">
+    <div className="columns is-multiline">
     </div>
-    <nav class="navbar py-4">
-      <div class="container is-fluid">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img class="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" />
-          </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-start"><a class="navbar-item" href="#">About</a><a class="navbar-item"
-              href="#">Company</a><a class="navbar-item" href="#">Services</a><a class="navbar-item"
-              href="#">Testimonials</a></div>
-          <div class="navbar-item">
-            <div class="field has-addons">
-              <div class="control">
-                <input class="input" type="search" placeholder="Search" aria-label="Search" />
-              </div>
-              <div class="control">
-                <button class="button" type="submit">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor"
-                    style={{ width: '24px', height: '24px' }}>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section class="section">
-      <div class="container">
-        <div class="mb-6 pb-3 columns is-multiline">
-          <div class="column is-12 is-6-desktop mx-auto has-text-centered">
-            <h2 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">My Mobile App</h2>
-            <p class="subtitle has-text-grey mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-              massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
-            <div class="buttons is-centered">
-              <a class="mr-3" href="#">
+    <section className="section">
+      <div className="container">
+        <div className="mb-6 pb-3 columns is-multiline">
+          <div className="column is-12 is-6-desktop mx-auto has-text-centered">
+            <h2 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">2pay</h2>
+            <p className="subtitle has-text-grey mb-5">Peer to peer and business orientated payment solution, you can trust</p>
+            <div className="buttons is-centered">
+              <a className="mr-3" href="#">
                 <img src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/app-store.svg" alt="" /></a>
               <a href="#">
                 <img src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/google-play.svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="columns is-multiline">
-          <div class="column is-12 is-4-desktop">
-            <div class="mb-6 is-flex">
+        <div className="columns is-multiline">
+          <div className="column is-12 is-4-desktop">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -64,12 +29,12 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
-            <div class="mb-6 is-flex">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -77,12 +42,12 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
-            <div class="mb-6 is-flex">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -90,17 +55,17 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
           </div>
-          <div class="column is-4 is-block-desktop is-hidden-touch">
-            <img class="mx-auto mt-0-widescreen is-block image" src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/devices/phone-full.svg"
+          <div className="column is-4 is-block-desktop is-hidden-touch">
+            <img className="mx-auto mt-0-widescreen is-block image" src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/devices/phone-full.svg"
               alt="" /></div>
-          <div class="column is-12 is-4-desktop">
-            <div class="mb-6 is-flex">
+          <div className="column is-12 is-4-desktop">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -108,12 +73,12 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
-            <div class="mb-6 is-flex">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -121,12 +86,12 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
-            <div class="mb-6 is-flex">
+            <div className="mb-6 is-flex">
               <span>
                 <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -134,9 +99,9 @@ export default function Home() {
                     fill="#00d1b2"></path>
                   <circle cx="24" cy="24" r="23.5" stroke="#00d1b2"></circle>
                 </svg></span>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
-                <p class="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
+              <div className="ml-3">
+                <h4 className="is-size-4 has-text-weight-bold mb-2">Lorem ipsum dolor</h4>
+                <p className="subtitle has-text-grey">Pellentesque eu quam vitae mi lacinia consequat quis in metus.</p>
               </div>
             </div>
           </div>
@@ -144,23 +109,23 @@ export default function Home() {
       </div>
     </section>
 
-    <section class="section has-background-primary">
-      <div class="container">
-        <div class="is-vcentered columns is-multiline">
-          <div class="column is-6 is-5-desktop mb-4">
-            <span class="has-text-white">Lorem ipsum</span>
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Lorem ipsum dolor sit
+    <section className="section has-background-primary">
+      <div className="container">
+        <div className="is-vcentered columns is-multiline">
+          <div className="column is-6 is-5-desktop mb-4">
+            <span className="has-text-white">Lorem ipsum</span>
+            <h2 className="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Lorem ipsum dolor sit
               amet consectutar</h2>
-            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh,
+            <p className="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh,
               pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
           </div>
-          <div class="column is-5 ml-auto">
-            <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <h4 class="is-size-5 mb-2 has-text-weight-bold">Join Our Mailing List!</h4>
-              <p class="has-text-grey-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div className="column is-5 ml-auto">
+            <div className="mx-auto box p-6 has-background-light has-text-centered">
+              <h4 className="is-size-5 mb-2 has-text-weight-bold">Join Our Mailing List!</h4>
+              <p className="has-text-grey-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <form action="#">
-                <input class="input mb-3" type="email" placeholder="Type your e-mail" /><button
-                  class="button is-primary is-fullwidth">Action</button>
+                <input className="input mb-3" type="email" placeholder="Type your e-mail" /><button
+                  className="button is-primary is-fullwidth">Action</button>
               </form>
             </div>
           </div>
@@ -168,38 +133,38 @@ export default function Home() {
       </div>
     </section>
 
-    <footer class="section">
-      <div class="container">
-        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
-          <div class="mr-auto mb-2">
-            <a class="is-inline-block" href="#">
-              <img class="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" /></a>
+    <footer className="section">
+      <div className="container">
+        <div className="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+          <div className="mr-auto mb-2">
+            <a className="is-inline-block" href="#">
+              <img className="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" /></a>
           </div>
           <div>
-            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white" href="#">About</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Company</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Services</a></li>
-              <li><a class="button is-white" href="#">Testimonials</a></li>
+            <ul className="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+              <li className="mr-4"><a className="button is-white" href="#">About</a></li>
+              <li className="mr-4"><a className="button is-white" href="#">Company</a></li>
+              <li className="mr-4"><a className="button is-white" href="#">Services</a></li>
+              <li><a className="button is-white" href="#">Testimonials</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="pt-5" style={{ borderTop: '1px solid #dee2e6'}}></div>
-      <div class="container">
-        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+      <div className="pt-5" style={{ borderTop: '1px solid #dee2e6'}}></div>
+      <div className="container">
+        <div className="is-flex-tablet is-justify-content-between is-align-items-center">
           <p>All rights reserved © My App 20XX</p>
-          <div class="py-2 is-hidden-tablet"></div>
-          <div class="ml-auto">
-            <a class="mr-4 is-inline-block" href="#">
+          <div className="py-2 is-hidden-tablet"></div>
+          <div className="ml-auto">
+            <a className="mr-4 is-inline-block" href="#">
               <img src="../images/app-page/socials/facebook.svg" alt="" /></a>
-            <a class="mr-4 is-inline-block" href="#">
+            <a className="mr-4 is-inline-block" href="#">
               <img src="../images/app-page/socials/twitter.svg" alt="" /></a>
-            <a class="mr-4 is-inline-block" href="#">
+            <a className="mr-4 is-inline-block" href="#">
               <img src="../images/app-page/socials/github.svg" alt="" /></a>
-            <a class="mr-4 is-inline-block" href="#">
+            <a className="mr-4 is-inline-block" href="#">
               <img src="../images/app-page/socials/instagram.svg" alt="" /></a>
-            <a class="is-inline-block" href="#">
+            <a className="is-inline-block" href="#">
               <img src="../images/app-page/socials/linkedin.svg" alt="" /></a>
           </div>
         </div>
