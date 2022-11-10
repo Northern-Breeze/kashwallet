@@ -17,20 +17,6 @@ export default function Meta(props: Props) {
       <meta name='description' content={description} />
       <meta name='name' content='The Ultimate News' />
       <meta name='keywords' content={keywords} />
-      <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-B92XVTGRKR'
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-B92XVTGRKR');
-        `,
-        }}
-      />
     </Head>
   );
 }

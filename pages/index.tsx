@@ -1,6 +1,7 @@
 import * as React from 'react';
 import InfoBar from '../components/Infobanner';
 import { motion, AnimatePresence } from "framer-motion";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
               <p className="subtitle mb-5">Peer to peer and business orientated payment solution, you can trust</p>
               <div className="buttons is-centered">
                 <a className="mr-3" href="#">
-                  <img src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/app-store.svg" alt="" /></a>
+                  <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/app-store.svg" alt="" width="150px" height="150px" /></a>
                 <a href="#">
-                  <img src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/google-play.svg" alt="" /></a>
+                  <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/google-play.svg" alt="" width='150px' height="150px" /></a>
               </div>
             </div>
           </div>
@@ -29,16 +30,16 @@ export default function Home() {
             <div className="column is-4 is-block-desktop is-hidden-touch">
               <AnimatePresence>
                 <motion.img
-                    className="mx-auto mt-0-widescreen is-block show-image" 
-                    src="/images/Phone_Screenshot_.jpg"
-                    alt="" 
-                    initial={{ x: 0, opacity: 0, scale: 0.5}}
-                    animate={{ x: 0, opacity: 1, scale: 1}}
-                    transition={{ delay: 0.2 }}
-                    exit={{ x: 0, opacity: 0 }}
-                  />
+                  className="mx-auto mt-0-widescreen is-block show-image"
+                  src="/images/Phone_Screenshot_.jpg"
+                  alt=""
+                  initial={{ x: 0, opacity: 0, scale: 0.5 }}
+                  animate={{ x: 0, opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.2 }}
+                  exit={{ x: 0, opacity: 0 }}
+                />
               </AnimatePresence>
-                </div>
+            </div>
             <div className="column is-12 is-4-desktop">
               <InfoBar title='Search for any user' description='Search for any user and make payment instantly' iconName='SearchOutline' />
               <InfoBar title='Generate QR Code' description='Generate QR Code and get paid' iconName='QrCodeOutline' />
@@ -47,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section has-background-primary">
+      <section className="section landing-section">
         <div className="container">
           <div className="is-vcentered columns is-multiline">
             <div className="column is-6 is-5-desktop mb-4">
@@ -63,7 +64,7 @@ export default function Home() {
                 <p className="has-text-grey-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <form action="#">
                   <input className="input mb-3" type="email" placeholder="Type your e-mail" /><button
-                    className="button is-primary is-fullwidth">Action</button>
+                    className="button is-fullwidth">Action</button>
                 </form>
               </div>
             </div>
@@ -76,7 +77,7 @@ export default function Home() {
           <div className="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
             <div className="mr-auto mb-2">
               <a className="is-inline-block" href="#">
-                <img className="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" /></a>
+                <Image className="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" height="25px" /></a>
             </div>
             <div>
               <ul className="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
@@ -94,16 +95,6 @@ export default function Home() {
             <p>All rights reserved © My App 20XX</p>
             <div className="py-2 is-hidden-tablet"></div>
             <div className="ml-auto">
-              <a className="mr-4 is-inline-block" href="#">
-                <img src="../images/app-page/socials/facebook.svg" alt="" /></a>
-              <a className="mr-4 is-inline-block" href="#">
-                <img src="../images/app-page/socials/twitter.svg" alt="" /></a>
-              <a className="mr-4 is-inline-block" href="#">
-                <img src="../images/app-page/socials/github.svg" alt="" /></a>
-              <a className="mr-4 is-inline-block" href="#">
-                <img src="../images/app-page/socials/instagram.svg" alt="" /></a>
-              <a className="is-inline-block" href="#">
-                <img src="../images/app-page/socials/linkedin.svg" alt="" /></a>
             </div>
           </div>
         </div>

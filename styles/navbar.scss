@@ -1,6 +1,10 @@
 .navbar-item {
+    text-decoration: underline;
     img {
         max-height: 2.75rem;
         border-radius: 1rem;
+    }
+    &:hover {
+        cursor: pointer;
     }
 }
