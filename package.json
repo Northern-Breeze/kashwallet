@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^7.6.5",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.56.1"
+    "react-ionicons": "^4.2.0",
+    "sass": "^1.56.1",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
