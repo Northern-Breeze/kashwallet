@@ -1,5 +1,6 @@
 import * as React from 'react';
 import InfoBar from '../components/Infobanner';
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (
@@ -26,8 +27,18 @@ export default function Home() {
               <InfoBar title='Send Payment Link' description='Send Payment Link and get paid instantly' iconName='LinkOutline' />
             </div>
             <div className="column is-4 is-block-desktop is-hidden-touch">
-              <img className="mx-auto mt-0-widescreen is-block show-image" src="/images/Phone_Screenshot_.jpg"
-                alt="" /></div>
+              <AnimatePresence>
+                <motion.img
+                    className="mx-auto mt-0-widescreen is-block show-image" 
+                    src="/images/Phone_Screenshot_.jpg"
+                    alt="" 
+                    initial={{ x: 0, opacity: 0, scale: 0.5}}
+                    animate={{ x: 0, opacity: 1, scale: 1}}
+                    transition={{ delay: 0.2 }}
+                    exit={{ x: 0, opacity: 0 }}
+                  />
+              </AnimatePresence>
+                </div>
             <div className="column is-12 is-4-desktop">
               <InfoBar title='Search for any user' description='Search for any user and make payment instantly' iconName='SearchOutline' />
               <InfoBar title='Generate QR Code' description='Generate QR Code and get paid' iconName='QrCodeOutline' />
