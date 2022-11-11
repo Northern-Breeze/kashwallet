@@ -1,4 +1,5 @@
 import * as React from "react";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import Navbar from "../Navbar";
 import Meta from "../Meta";
 
@@ -13,6 +14,7 @@ export default function Layout(props: Props) {
             <Meta />
             <Navbar />
             <>{children}</>
+            <GoogleAnalytics trackPageViews />
         </>
     );
 }
