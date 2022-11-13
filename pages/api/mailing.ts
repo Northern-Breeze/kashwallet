@@ -3,7 +3,8 @@ import { SMTPClient } from 'emailjs';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
-        const { email } = req.body;
+        const payload = req.body;
+        const { email } = JSON.parse(payload);
         const client = new SMTPClient({
             user: process.env.MAIL_USER_NAME,
             password: process.env.MAIL_PASSWORD,

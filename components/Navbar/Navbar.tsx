@@ -1,8 +1,20 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
+
+    const router = useRouter();
+
+    const handleAuthResponseSignIn = () => {
+        router.push('https://app.2pay.co.za/login')
+    };
+
+    const handleAuthResponseSignUp = () => {
+        router.push('https://app.2pay.co.za/register')
+    }
+    
     return (
         <nav className="navbar py-4">
             <div className="container is-fluid">
@@ -36,21 +48,15 @@ export default function Navbar() {
                             </div>
                         </Link>
                     </div>
+                    <div className='navbar-item'>
+                        <button className='button is-link' onClick={handleAuthResponseSignIn}>
+                            Sign In
+                        </button>
+                    </div>
                     <div className="navbar-item">
-                        <div className="field has-addons">
-                            <div className="control">
-                                <input className="input" type="search" placeholder="Search" aria-label="Search" />
-                            </div>
-                            <div className="control">
-                                <button className="button" type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                        style={{ width: '24px', height: '24px' }}>
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+                        <button className='button' onClick={handleAuthResponseSignUp}>
+                            Sign Up
+                        </button>
                     </div>
                 </div>
             </div>

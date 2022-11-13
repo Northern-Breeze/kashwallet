@@ -77,10 +77,9 @@ export default function Home() {
             </div>
             <div>
               <ul className="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-                <li className="mr-4"><a className="button is-white" href="#">About</a></li>
-                <li className="mr-4"><a className="button is-white" href="#">Company</a></li>
-                <li className="mr-4"><a className="button is-white" href="#">Services</a></li>
-                <li><a className="button is-white" href="#">Testimonials</a></li>
+                <li className="mr-4"><a className="button is-white" href="/about">About</a></li>
+                <li className="mr-4"><a className="button is-white" href="/contact-us">Contact Us</a></li>
+                <li className="mr-4"><a className="button is-white" href="/services">Services</a></li>
               </ul>
             </div>
           </div>
@@ -88,7 +87,7 @@ export default function Home() {
         <div className="pt-5" style={{ borderTop: '1px solid #dee2e6' }}></div>
         <div className="container">
           <div className="is-flex-tablet is-justify-content-between is-align-items-center">
-            <p>All rights reserved © My App 20XX</p>
+            <p>All rights reserved © 2pay 2022</p>
             <div className="py-2 is-hidden-tablet"></div>
             <div className="ml-auto">
             </div>
