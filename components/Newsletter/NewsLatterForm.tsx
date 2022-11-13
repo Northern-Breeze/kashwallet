@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import * as React from 'react'
 import { useForm } from "react-hook-form";
-import useSWR from 'swr'
-import { getCookie } from '../../utils/getCookie';
-import { setCookie } from '../../utils/setCookie';
 import Check from '../Check';
 
 type Inputs = {
