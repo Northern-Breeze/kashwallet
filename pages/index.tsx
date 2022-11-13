@@ -2,6 +2,7 @@ import * as React from 'react';
 import InfoBar from '../components/Infobanner';
 import { motion, AnimatePresence } from "framer-motion";
 import Image from 'next/image';
+import Link from 'next/link';
 import NewsLatterForm from '../components/Newsletter';
 
 export default function Home() {
@@ -16,10 +17,16 @@ export default function Home() {
               <h2 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold" style={{ color: '#31004a' }}>2pay</h2>
               <p className="subtitle mb-5">Peer to peer and business orientated payment solution, you can trust</p>
               <div className="buttons is-centered">
-                <a className="mr-3" href="#">
-                  <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/app-store.svg" alt="" width="150px" height="150px" /></a>
-                <a href="#">
-                  <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/google-play.svg" alt="" width='150px' height="150px" /></a>
+                <Link href="#">
+                  <a className="mr-3">
+                    <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/app-store.svg" alt="" width="150px" height="150px" />
+                  </a>
+                </Link>
+                <Link href="#">
+                  <a className="mr-3">
+                    <Image src="https://bulmatemplates.github.io/bulma-templates/images/app-page/images/buttons/google-play.svg" alt="" width='150px' height="150px" />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -72,14 +79,15 @@ export default function Home() {
         <div className="container">
           <div className="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
             <div className="mr-auto mb-2">
-              <a className="is-inline-block" href="#">
-                <Image className="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" height="25px" /></a>
+              <Link className="is-inline-block" href="#">
+                <Image className="image" src="https://bulma.io/images/bulma-logo.png" alt="" width="96px" height="25px" />
+              </Link>
             </div>
             <div>
               <ul className="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-                <li className="mr-4"><a className="button is-white" href="/about">About</a></li>
-                <li className="mr-4"><a className="button is-white" href="/contact-us">Contact Us</a></li>
-                <li className="mr-4"><a className="button is-white" href="/services">Services</a></li>
+                <li className="mr-4"><Link className="button is-white" href="/about">About</Link></li>
+                <li className="mr-4"><Link className="button is-white" href="/contact-us">Contact Us</Link></li>
+                <li className="mr-4"><Link className="button is-white" href="/services">Services</Link></li>
               </ul>
             </div>
           </div>
