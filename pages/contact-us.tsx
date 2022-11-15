@@ -31,7 +31,7 @@ export default function ContactUs() {
     return (
         <div className='contact-us'>
             <div className='left-show'>
-                <h2>Contact Us</h2>
+                <h1 className='mb-4 is-size-1 is-size-3-mobile has-text-weight-bold'>Contact Us</h1>
                 <p className='feedback-text'>We all love feedback especially us, reach out to us on anything and everything</p>
             </div>
             <div className='right-details'>
