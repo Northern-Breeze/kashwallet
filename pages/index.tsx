@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container">
           <div className="mb-6 pb-3 columns is-multiline">
             <div className="column is-12 is-6-desktop mx-auto has-text-centered">
-              <h2 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold" style={{ color: '#31004a' }}>2pay</h2>
+              <h2 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold" style={{ color: '#31004a' }}>KashWallet</h2>
               <p className="subtitle mb-5">Peer to peer and business orientated payment solution, you can trust</p>
               <div className="buttons is-centered">
                 <Link href="#">
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="pt-5" style={{ borderTop: '1px solid #dee2e6' }}></div>
         <div className="container">
           <div className="is-flex-tablet is-justify-content-between is-align-items-center">
-            <p>All rights reserved © 2pay 2022</p>
+            <p>All rights reserved © Kashwallet 2023</p>
             <div className="py-2 is-hidden-tablet"></div>
             <div className="ml-auto">
             </div>

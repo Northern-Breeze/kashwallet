@@ -5,16 +5,6 @@ import { useRouter } from 'next/router'
 
 export default function Navbar() {
 
-    const router = useRouter();
-
-    const handleAuthResponseSignIn = () => {
-        router.push('https://app.2pay.co.za/login')
-    };
-
-    const handleAuthResponseSignUp = () => {
-        router.push('https://app.2pay.co.za/register')
-    }
-    
     return (
         <nav className="navbar py-4">
             <div className="container is-fluid">
@@ -47,16 +37,6 @@ export default function Navbar() {
                                 Services
                             </div>
                         </Link>
-                    </div>
-                    <div className='navbar-item'>
-                        <button className='button is-link' onClick={handleAuthResponseSignIn}>
-                            Sign In
-                        </button>
-                    </div>
-                    <div className="navbar-item">
-                        <button className='button' onClick={handleAuthResponseSignUp}>
-                            Sign Up
-                        </button>
                     </div>
                 </div>
             </div>
