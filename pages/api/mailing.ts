@@ -1,34 +1,39 @@
 import { NextApiResponse, NextApiRequest } from 'next'
-import { SMTPClient } from 'emailjs';
+import nodemailer from 'nodemailer';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
         const payload = req.body;
         const { email } = JSON.parse(payload);
-        const client = new SMTPClient({
-            user: process.env.MAIL_USER_NAME,
-            password: process.env.MAIL_PASSWORD,
+        const transporter = nodemailer.createTransport({
             host: 'smtp.mail.yahoo.com',
-            ssl: true
+            port: 465,
+            service:'yahoo',
+            secure: false,
+            auth: {
+              user: process.env.MAIL_USER_NAME,
+              pass: process.env.MAIL_PASSWORD,
+            },
+            debug: false,
+            logger: true
         });
 
-        client.send(
-            {
-                text: `Just received an newsletter subscription from ${email}`,
-                from: process.env.MAIL_USER_NAME || '',
-                to: process.env.MAIL_USER_NAME || '',
-                subject: 'Newsletter',
-
-            },
-            (err, message) => {
-                if (err) {
-                    console.log(err);
-                    res.status(400).json({ success: false,  message: 'Something went wrong' })
-                }
-                console.log(message);
-            }
-        )
-        res.status(200).json({ success: true, message: 'Successfully subscribed' })
+        const html = `<p>You have received a news letter subscription from ${email}</p>`
+         
+        const options = {
+            from: process.env.MAIL_USER_NAME,
+            to: email,
+            subject: 'News Letter subscription',
+            html: html
+        }
+        
+        transporter.sendMail(options).then(() => {
+            res.status(200).json({ success: true, message: 'Successfully subscribed' })
+        }).catch(error => {
+            console.log(error); 
+            res.status(400).json({ success: true, message: 'Failed to send newsletter' })
+        })
+        
     } catch (e) {
         console.log(e);
         res.status(400).json({ success: false,  message: 'Something went wrong' })

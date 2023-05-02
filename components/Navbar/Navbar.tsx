@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router'
 
 export default function Navbar() {
 
@@ -11,7 +10,7 @@ export default function Navbar() {
                 <div className="navbar-brand">
                     <div className='navbar-item'>
                         <Link href="/">
-                            <Image className="image" src="/images/logo.png" alt="2pay logo" height="100px" width="100%" />
+                            <Image className="image" src="/images/logo.png" alt="Kashwallet logo" height="100px" width="100%" />
                         </Link>
                     </div>
                     <button className="navbar-burger" role="button" aria-label="menu" aria-expanded="false">

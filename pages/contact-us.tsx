@@ -1,6 +1,9 @@
 import * as React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from 'next/router'
+import { useAlert } from 'react-alert'
+
+
 type Inputs = {
     name: string;
     email: string;
@@ -9,22 +12,31 @@ type Inputs = {
 }
 
 export default function ContactUs() {
+    const [isloading, setIsLoading] = React.useState(false);
+
     const { register, handleSubmit, formState: { errors } } = useForm<Inputs>();
-    const router = useRouter()
+
+    const router = useRouter();
+    const showAlert = useAlert()
+
     const onSubmit: SubmitHandler<Inputs> = async (data) => {
         try {
+            setIsLoading(true);
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 body: JSON.stringify(data)
-            })
+            });
             const payload = await response.json();
             if (!payload.success) {
-                //
+                showAlert.show(payload.message)
             } else {
-                router.push('/')
+                showAlert.show(payload.message)
             }
+            setIsLoading(false);
         } catch (error) {
             console.log(error);
+            showAlert.show('Something went wrong, please try again later');
+            setIsLoading(false);
         }
     };
 
@@ -120,7 +132,7 @@ export default function ContactUs() {
                                 <div className="field">
                                     <div className="control">
                                         <button className="button is-primary is-block is-full-width">
-                                            Send message
+                                            {isloading ? "Sending ..." : "Send Message"}
                                         </button>
                                     </div>
                                 </div>

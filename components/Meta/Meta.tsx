@@ -12,19 +12,19 @@ export default function Meta(props: Props) {
   return (
     <Head>
       <title>{title}</title>
-      <meta property='og:title' content='2pay' key='title' />
+      <meta property='og:title' content='Kashwallet' key='title' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='description' content={description} />
-      <meta name='name' content='The Ultimate News' />
+      <meta name='name' content='Kashwallet' />
       <meta name='keywords' content={keywords} />
     </Head>
   );
 }
 
 Meta.defaultProps = {
-  title: "2pay - payments resilience",
+  title: "Kashwallet - payments resilience",
   keywords:
     "Peer 2 peer, payments, Invoicing, Scan to pay, Payment links, make payments easily",
   description:
-    "2pay is a payments solution for small business and peer to peer user's",
+    "Kashwallet is a payments solution for peer to peer user's",
 };

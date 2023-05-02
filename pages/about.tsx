@@ -13,7 +13,7 @@ export default function about() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -300, opacity: 0 }}
             >
-              About 2pay
+              About Kashwallet
             </motion.h1>
           </AnimatePresence>
         </div>
