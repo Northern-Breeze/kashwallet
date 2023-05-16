@@ -9,13 +9,15 @@
         display: flex;
         flex-direction: row;
         grid-gap: 5rem;
+        flex-wrap: wrap;
         .explanation {
             .feature-header {
+                margin: 1.5rem;
                 color: $primary-color;   
             }
             .feature-description {
                 p {
-                    width: 400px;
+                    margin: 1.5rem;
                 }
             }
         }
