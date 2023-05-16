@@ -10,6 +10,12 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#__next {
+  width: 100vw;
 }
 
 a {
@@ -17,12 +23,9 @@ a {
   text-decoration: underline;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-@import './navbar.scss';
-@import './home.scss';
-@import './about.scss';
-@import './contact-us.scss';
-@import './services.scss';
+@import './navbar';
+@import './home';
+@import './about';
+@import './contact-us';
+@import './services';

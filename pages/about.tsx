@@ -5,10 +5,9 @@ export default function about() {
   return (
     <div className='about_wrapper'>
       <div className='left-info'>
-        <div>
           <AnimatePresence>
             <motion.h1
-              className='mb-4 is-size-1 is-size-3-mobile has-text-weight-bold color-header'
+              className='header'
               initial={{ x: -300, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -300, opacity: 0 }}
@@ -16,14 +15,13 @@ export default function about() {
               About Kashwallet
             </motion.h1>
           </AnimatePresence>
-        </div>
         <AnimatePresence>
           <motion.p className='description'
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
           >
-            2pay is a payment platform that allow individuals and business to make and receive payments easily
+            Kashwallet is a payment platform that allow individuals and business to make and receive payments easily
           </motion.p>
         </AnimatePresence>
       </div>
