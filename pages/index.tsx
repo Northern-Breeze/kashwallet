@@ -17,7 +17,7 @@ export default function Home() {
                 className="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold"
                 style={{ color: "#31004a" }}
               >
-                KashWallet
+                Radyse Moon
               </h2>
               <p className="subtitle mb-5">
                 Peer to peer and business orientated payment solution, you can
